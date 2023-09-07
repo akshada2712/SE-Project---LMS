@@ -1,0 +1,139 @@
+/* App container */
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar container */
+.Sidebar {
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 250px;
+  border-right: 1px solid #ccc;
+}
+
+.Sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Sidebar li {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.Sidebar li:hover {
+  background-color: #ccc;
+}
+
+/* Chat container */
+.Chat {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+}
+
+.Chat h2 {
+  margin-top: 0;
+}
+
+/* Message list */
+.MessageList {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.Message {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.Message__text {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+
+.Message__date {
+  font-size: 12px;
+  color: #aaa;
+  margin-left: 10px;
+}
+
+.Message__time {
+  font-size: 12px;
+  color: #aaa;
+  margin-left: 5px;
+}
+
+/* Message form */
+.MessageForm {
+  display: flex;
+  margin-top: 10px;
+}
+
+.MessageForm input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.MessageForm button[type="submit"] {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.MessageForm button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.SearchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.SearchBar input[type="text"] {
+  border: none;
+  padding: 8px;
+  margin-right: 8px;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.SearchBar button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.SearchBar button:hover {
+  background-color: #0062cc;
+}

@@ -1,0 +1,49 @@
+label {
+  color: cornflowerblue;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.menu {
+  background-image: url('images/startup-photos.jpg') ;
+  background-size:cover;
+  min-height: 100vh;
+}
+
+.carddash {
+  background-color: red !important;
+}
+
+.loginreg {
+  box-shadow: 10px 10px 10px;
+  width:500px;
+  margin:auto;
+}
+
+@media (max-width: 800px) {
+  .loginreg {
+      box-shadow: 10px 10px 10px;
+      width: 100%;
+    }
+}
+
+.calendarimp {
+  position: absolute !important;
+  z-index: 100 !important;
+  border:5px solid cornflowerblue;
+  background-color: white;
+}
+
+.rbc-toolbar {
+  background-color: white;
+  padding: 10px;
+
+}
+
+.rbc-btn-group {
+  background-color: white;
+  color:black;
+  margin: 20px;
+  padding: 10px;
+
+}

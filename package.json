@@ -1,0 +1,58 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@react-oauth/google": "^0.8.0",
+    "@types/react": "^18.0.38",
+    "antd": "^5.4.0",
+    "availity-reactstrap-validation": "2.6.0",
+    "axios": "^1.3.6",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "jwt-decode": "^3.1.2",
+    "path": "^0.12.7",
+    "pg": "^8.9.0",
+    "pg-native": "^3.0.1",
+    "react": "^17.0.2",
+    "react-big-calendar": "^1.6.9",
+    "react-bootstrap": "^2.7.4",
+    "react-confetti": "^6.1.0",
+    "react-dom": "16.8.6",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "^5.0.1",
+    "reactstrap": "8.1.1",
+    "styled-components": "^5.3.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "install-all-packages": "npm install && cd api && npm install && cd ..",
+    "lint": "npx eslint --fix src/",
+    "api-start": "npm run lint && npm run get-db-url && npm run build && cd api && npm start",
+    "get-db-url": "rm -f .env && touch .env && printf 'REACT_APP_DATABASE_URL=' >> .env && heroku config:get DATABASE_URL -a edumate >> .env",
+    "build": "rm -rf build && cd api && rm -rf public && mkdir public && cd ../ && react-scripts build && cp -r build/ api/public",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "dotenv-webpack": "^8.0.1",
+    "eslint": "^8.39.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-jsx": "^11.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-standard": "^5.0.0",
+    "react-app-rewired": "^2.2.1"
+  }
+}

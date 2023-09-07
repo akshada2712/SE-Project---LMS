@@ -1,0 +1,150 @@
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.course-card {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-card:hover {
+  background-color: #ddd;
+}
+
+.students-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.student-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.student-btn:hover {
+  background-color: #3e8e41;
+}
+button.search-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.search-button:hover {
+  background-color: #3e8e41; /* Dark green */
+}
+input.search-field {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+input.search-field:focus {
+  outline: none;
+  border: 1px solid #4CAF50;
+}
+
+.course-list-container {
+  padding: 24px;
+}
+
+.course-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.course-list-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.course-list-search {
+  width: 300px;
+}
+
+.course-list-table {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.save-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #0062cc;
+}
+
+
+.ant-input-wrapper {
+  margin-bottom: 16px;
+}
+
+.ant-input {
+  height: 40px;
+  border-radius: 4px;
+  border-color: #d9d9d9;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  box-shadow: none;
+  border-color: #40a9ff;
+}
+
+.ant-input::placeholder {
+  color: #bfbfbf;
+}
+
+.logo-container {
+  width: 90px; /* set the width of the container */
+  height: 65px; /* set the height of the container */
+}
+.logo {
+  width: 100%; /* set the width of the image to 100% */
+  height: 65px; /* set the height of the image to 100% */
+  object-fit: contain; /* set the object-fit property to contain */
+}
+
